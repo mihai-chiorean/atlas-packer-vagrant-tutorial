@@ -17,9 +17,7 @@
                 "scripts/vagrant.sh",
                 "scripts/dep.sh",
                 "scripts/cleanup.sh",
-                "scripts/zerodisk.sh",
-                "scripts/go.sh",
-                "scripts/prompt.sh"
+                "scripts/zerodisk.sh"
             ],
             "override": {
                 "virtualbox-iso": {
@@ -48,9 +46,9 @@
             "disk_size": 20480,
             "guest_os_type": "Ubuntu_64",
             "http_directory": "http",
-            "iso_checksum": "a3b345908a826e262f4ea1afeb357fd09ec0558cf34e6c9112cead4bb55ccdfb",
+            "iso_checksum": "af224223de99e2a730b67d7785b657f549be0d63221188e105445f75fb8305c9",
             "iso_checksum_type": "sha256",
-            "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.3-server-amd64.iso",
+            "iso_url": "http://releases.ubuntu.com/precise/ubuntu-12.04.5-server-amd64.iso",
             "ssh_username": "vagrant",
             "ssh_password": "vagrant",
             "ssh_port": 22,
@@ -75,9 +73,9 @@
             "guest_os_type": "Ubuntu-64",
             "headless": true,
             "http_directory": "http",
-            "iso_checksum": "a3b345908a826e262f4ea1afeb357fd09ec0558cf34e6c9112cead4bb55ccdfb",
+            "iso_checksum": "af224223de99e2a730b67d7785b657f549be0d63221188e105445f75fb8305c9",
             "iso_checksum_type": "sha256",
-            "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.3-server-amd64.iso",
+            "iso_url": "http://releases.ubuntu.com/precise/ubuntu-12.04.5-server-amd64.iso",
             "skip_compaction": true,
             "ssh_username": "vagrant",
             "ssh_password": "vagrant",
@@ -95,12 +93,22 @@
         },
         {
             "type": "atlas",
+            "only": ["vmware-iso"],
+            "artifact": "{{user `atlas_username`}}/{{user `atlas_name`}}",
+            "artifact_type": "vagrant.box",
+            "metadata": {
+                "provider": "vmware_desktop",
+                "version": "0.0.1"
+            }
+        },
+        {
+            "type": "atlas",
             "only": ["virtualbox-iso"],
             "artifact": "{{user `atlas_username`}}/{{user `atlas_name`}}",
             "artifact_type": "vagrant.box",
             "metadata": {
                 "provider": "virtualbox",
-                "version": "0.0.7"
+                "version": "0.0.1"
             }
         }]
     ]
