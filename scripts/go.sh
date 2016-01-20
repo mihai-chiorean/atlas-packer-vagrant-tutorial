@@ -34,4 +34,5 @@ echo 'export GOPATH=~/workspace' >> ~/.bash_profile
 echo 'export GOBIN=~/workspace/bin' >> ~/.bash_profile
 
 # install development binaries
-vim -c 'GoInstallBinaries' -c 'qa!'
+vim +PluginInstall +qall
+vim +GoInstallBinaries +qall
