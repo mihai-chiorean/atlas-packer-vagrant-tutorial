@@ -9,7 +9,9 @@ apt-get -y install curl git
 # You can install anything you need here
 
 # golang
-apt-get -y install golang golang-go gocode godef goimports golint gometalinter gotags gorename asmfmt
+apt-get install -y golang golang-go gocode gpm ctags \
+    vim-doc vim-scripts golang-go golang-go.tools \
+    libtemplate-perl aspell ispell
 
 # vim
 apt-get -y install vim-syntax-go vim-addon-manager

@@ -22,10 +22,10 @@ echo 'set nocompatible              " be iMproved, required  ' >> ~/.vimrc
 echo 'filetype off                  " required               ' >> ~/.vimrc
 echo 'set rtp+=~/.vim/bundle/Vundle.vim  " required          ' >> ~/.vimrc
 echo 'call vundle#begin()                  " required        ' >> ~/.vimrc
-echo "Plugin 'VundleVim/Vundle.vim'                          " >> ~/.vimrc
-echo "Plugin 'fatih/vim-go'                                  " >> ~/.vimrc
-echo "call vundle#end()                                      " >> ~/.vimrc
-echo "filetype plugin indent on                              " >> ~/.vimrc
+echo "Plugin 'VundleVim/Vundle.vim'" >> ~/.vimrc
+echo "Plugin 'fatih/vim-go'" >> ~/.vimrc
+echo "call vundle#end()" >> ~/.vimrc
+echo "filetype plugin indent on" >> ~/.vimrc
 
 mkdir ~/workspace
 chown -R vagrant:vagrant ~/workspace
@@ -34,4 +34,4 @@ echo 'export GOPATH=~/workspace' >> ~/.bash_profile
 echo 'export GOBIN=~/workspace/bin' >> ~/.bash_profile
 
 # install development binaries
-vim -cmd '' -c 'GoInstallBinaries' -c 'qa!'
+vim -c 'GoInstallBinaries' -c 'qa!'
