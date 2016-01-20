@@ -10,8 +10,7 @@ apt-get -y install curl git
 
 # golang
 apt-get install -y golang golang-go gocode gpm ctags \
-    vim-doc vim-scripts golang-go golang-go.tools \
-    libtemplate-perl aspell ispell
+    vim-doc vim-scripts golang-go.tools
 
 # vim
 apt-get -y install vim-syntax-go vim-addon-manager
