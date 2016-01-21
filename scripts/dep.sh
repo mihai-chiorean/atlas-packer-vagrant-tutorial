@@ -18,7 +18,7 @@ apt-get install -y golang golang-go gocode gpm ctags \
 apt-get -y install software-properties-common
 add-apt-repository -y ppa:thopiekar/pacman
 apt-get update
-apt-get -y install vim-syntax-go vim-addon-manager dirmngr pacman pacman-pm rng-tools
+apt-get -y install vim-syntax-go vim-addon-manager dirmngr stow pacman-pm rng-tools
 
 printf '[core] \n
 SigLevel = PackageRequired \n
