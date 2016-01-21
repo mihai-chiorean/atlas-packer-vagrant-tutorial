@@ -6,6 +6,8 @@ apt-get -y update
 
 apt-get -y install curl git
 
+apt-get -y install build-essential cmake
+apt-get -y install python-dev
 # You can install anything you need here
 
 # golang
