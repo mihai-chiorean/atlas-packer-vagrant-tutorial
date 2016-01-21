@@ -11,7 +11,8 @@ make
 
 sudo find / -type f | xargs grep somerandomstring > /dev/null
 mkdir -p /home/vagrant/.vim/colors
-wget https://github.com/Lokaltog/vim-distinguished/blob/develop/colors/distinguished.vim /home/vagrant/.vim/colors/distinguished.vim
+cd ~/.vim/colors
+wget https://raw.githubusercontent.com/Lokaltog/vim-distinguished/develop/colors/distinguished.vim
 #mkdir /home/vagrant/.vim/syntax
 #mkdir /home/vagrant/.vim/ftdetect
 #mkdir /home/vagrant/.vim/bundle
