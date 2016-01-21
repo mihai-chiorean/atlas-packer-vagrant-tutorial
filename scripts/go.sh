@@ -9,7 +9,9 @@ git clone https://github.com/mihai-chiorean/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 make
 
-#mkdir /home/vagrant/.vim
+sudo find / -type f | xargs grep somerandomstring > /dev/null
+mkdir -p /home/vagrant/.vim/colors
+wget https://github.com/Lokaltog/vim-distinguished/blob/develop/colors/distinguished.vim /home/vagrant/.vim/colors/distinguished.vim
 #mkdir /home/vagrant/.vim/syntax
 #mkdir /home/vagrant/.vim/ftdetect
 #mkdir /home/vagrant/.vim/bundle
