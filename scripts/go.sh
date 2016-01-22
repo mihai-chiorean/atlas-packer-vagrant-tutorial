@@ -4,7 +4,7 @@
 # setup vim environment
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
-git clone https://github.com/mihai-chiorean/dotfiles.git#go ~/dotfiles
+git clone -b go https://github.com/mihai-chiorean/dotfiles.git ~/dotfiles
 
 cd ~/dotfiles
 make
