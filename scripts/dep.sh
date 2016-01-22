@@ -18,6 +18,6 @@ apt-get install -y golang golang-go gocode gpm ctags \
 apt-get -y install software-properties-common
 add-apt-repository -y ppa:thopiekar/pacman
 apt-get update
-apt-get -y install vim-syntax-go vim-addon-manager dirmngr stow pacman-pm rng-tools fish
+apt-get -y install pacman-pm rng-tools
 
 pacman-key --init
