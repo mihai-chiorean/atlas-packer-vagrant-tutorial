@@ -15,10 +15,10 @@
                 "scripts/virtualbox.sh",
                 "scripts/vagrant.sh",
                 "scripts/dep.sh",
-                "scripts/cleanup.sh",
-                "scripts/zerodisk.sh",
+                "scripts/prompt.sh",
                 "scripts/go.sh",
-                "scripts/prompt.sh"
+                "scripts/cleanup.sh",
+                "scripts/zerodisk.sh"
             ],
             "override": {
                 "virtualbox-iso": {
@@ -69,7 +69,7 @@
             "artifact_type": "vagrant.box",
             "metadata": {
                 "provider": "virtualbox",
-                "version": "0.0.29"
+                "version": "0.0.32"
             }
         }]
     ]

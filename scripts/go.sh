@@ -4,7 +4,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 git clone -b go https://github.com/mihai-chiorean/dotfiles.git ~/dotfiles
 
-sudo find / -type f | xargs grep somerandomstring > /dev/null
 mkdir -p /home/vagrant/.vim/colors
 cd ~/.vim/colors
 wget https://raw.githubusercontent.com/Lokaltog/vim-distinguished/develop/colors/distinguished.vim
