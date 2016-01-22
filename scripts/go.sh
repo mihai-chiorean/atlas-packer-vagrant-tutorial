@@ -6,9 +6,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 git clone -b go https://github.com/mihai-chiorean/dotfiles.git ~/dotfiles
 
-cd ~/dotfiles
-make
-
 sudo find / -type f | xargs grep somerandomstring > /dev/null
 mkdir -p /home/vagrant/.vim/colors
 cd ~/.vim/colors
@@ -42,4 +39,4 @@ echo 'export GOBIN=~/workspace/bin' >> ~/.bash_profile
 
 # install development binaries
 #vim +PluginInstall +qall
-vim +GoInstallBinaries +qall
+#vim +GoInstallBinaries +qall
